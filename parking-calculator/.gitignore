@@ -1,0 +1,37 @@
+# --- Maven (Archivos compilados) ---
+target/
+*.log
+
+# --- Java (Archivos de clases y JARs sueltos) ---
+*.class
+*.jar
+*.war
+*.ear
+# Excepción: si tienes librerías manuales en una carpeta lib
+!lib/*.jar
+
+# --- IDE: VS Code ---
+.vscode/
+*.code-workspace
+
+# --- IDE: IntelliJ IDEA (Por si acaso) ---
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# --- IDE: Eclipse (Por si acaso) ---
+.settings/
+bin/
+.classpath
+.project
+
+# --- Mac OS (Archivos basura del sistema) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Reportes de Cobertura (JaCoCo) ---
+# (Generalmente están en target, pero por si se generan fuera)
+jacoco.exec
+*.ec

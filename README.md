@@ -10,7 +10,7 @@ El sistema se basa en una **Arquitectura en Capas** para asegurar la separación
 3.  **Capa de Dominio (`ParkingRateCalculator`, `ParkingTicket`):** Contiene las reglas de negocio (tarifas, topes, descuentos) y las entidades de datos.
 
 ### Diagrama de Clases (UML)
-<img src="./UML.png" alt="Diagrama UML" width="70%">
+<img src="./UML.png" alt="Diagrama UML" width="50%">
 
 ## Instrucciones de Ejecución
 ### Prerrequisitos
@@ -118,7 +118,7 @@ Herramienta utilizada: VS Code Java Test Runner (Motor JaCoCo).
 Para este proyecto, he priorizado la Cobertura de Ramas (Branch Coverage) sobre la simple cobertura de líneas. Esta decisión estratégica se debe a que el núcleo del dominio (ParkingRateCalculator) concentra reglas de negocio basadas en condiciones complejas —como la aplicación de topes diarios o descuentos de fin de semana—; por consiguiente, era indispensable validar matemáticamente cada bifurcación lógica (if/else) tanto en sus caminos verdaderos como falsos, asegurando así la robustez del cálculo de tarifas y la ausencia de código muerto en la capa de servicio.
 
 A continuación, se presenta una imagen con el porcentaje de cobertura de cada archivo:
-![alt text](image.png)
+<img src="image.png" alt="Diagrama UML" width="50%">
 
 
 ## Licencia

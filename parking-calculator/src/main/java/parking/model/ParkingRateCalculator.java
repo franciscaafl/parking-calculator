@@ -1,4 +1,4 @@
-package parking;
+package parking.model;
 
 import java.time.DayOfWeek;
 import java.time.Duration;

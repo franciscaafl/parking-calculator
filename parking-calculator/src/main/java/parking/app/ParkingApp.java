@@ -1,8 +1,14 @@
-package parking;
+package parking.app;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
+
+import parking.model.ParkingRateCalculator;
+import parking.model.ParkingTicket;
+import parking.model.TicketStatus;
+import parking.model.VehicleType;
+import parking.service.ParkingLotService;
 
 public class ParkingApp {
 

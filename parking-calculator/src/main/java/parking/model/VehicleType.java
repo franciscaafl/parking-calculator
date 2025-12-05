@@ -1,4 +1,4 @@
-package parking;
+package parking.model;
 
 public enum VehicleType {
     AUTO(800),

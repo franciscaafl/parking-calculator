@@ -6,6 +6,9 @@ import java.time.LocalDateTime;
 
 import org.junit.jupiter.api.Test;
 
+import parking.model.ParkingRateCalculator;
+import parking.model.VehicleType;
+
 class ParkingRateCalculatorTest {
 
     private final ParkingRateCalculator calc = new ParkingRateCalculator();

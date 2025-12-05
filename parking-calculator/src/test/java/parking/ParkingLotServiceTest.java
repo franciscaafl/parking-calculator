@@ -7,6 +7,12 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
+import parking.model.ParkingRateCalculator;
+import parking.model.ParkingTicket;
+import parking.model.TicketStatus;
+import parking.model.VehicleType;
+import parking.service.ParkingLotService;
+
 public class ParkingLotServiceTest {
 
     private final ParkingRateCalculator calc = new ParkingRateCalculator();

@@ -6,6 +6,10 @@ import java.time.LocalDateTime;
 
 import org.junit.jupiter.api.Test;
 
+import parking.model.ParkingTicket;
+import parking.model.TicketStatus;
+import parking.model.VehicleType;
+
 public class ParkingTicketTest {
 
     @Test

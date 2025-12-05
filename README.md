@@ -113,9 +113,15 @@ $ mvn clean test jacoco:report
 ```
 
 ## Reporte de Cobertura
-Herramienta utilizada: VS Code Java Test Runner (Motor JaCoCo).
+### ¿Qué tipo de cobertura he medido y por qué?
 
-Para este proyecto, he priorizado la Cobertura de Ramas (Branch Coverage) sobre la simple cobertura de líneas. Esta decisión estratégica se debe a que el núcleo del dominio (ParkingRateCalculator) concentra reglas de negocio basadas en condiciones complejas —como la aplicación de topes diarios o descuentos de fin de semana—; por consiguiente, era indispensable validar matemáticamente cada bifurcación lógica (if/else) tanto en sus caminos verdaderos como falsos, asegurando así la robustez del cálculo de tarifas y la ausencia de código muerto en la capa de servicio.
+En este proyecto se ha utilizado la herramienta **JaCoCo** para medir dos métricas complementarias:
+
+1.  **Cobertura de Líneas (Line Coverage):**
+    * **Por qué:** Para asegurar cuantitativamente que la gran mayoría del código escrito ha sido ejecutado al menos una vez durante las pruebas, evitando "código muerto" o zonas sin explorar.
+
+2.  **Cobertura de Ramas (Branch Coverage):**
+    * **Por qué:** Dada la naturaleza del proyecto (cálculo de tarifas con múltiples condiciones), es crítico verificar que se han evaluado tanto los casos verdaderos como falsos de cada estructura de control (`if`, `else`), garantizando que la lógica de negocio responde correctamente ante cualquier variante.
 
 A continuación, se presenta una imagen con el porcentaje de cobertura de cada archivo:
 <img src="image.png" alt="Diagrama UML" width="50%">

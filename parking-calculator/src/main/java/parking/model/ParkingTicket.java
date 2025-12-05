@@ -51,7 +51,7 @@ public class ParkingTicket {
 
     public void close(LocalDateTime exitTime, long amountCharged) {
         if (status == TicketStatus.CLOSED) {
-            throw new IllegalStateException("Ticket is already closed");
+            throw new IllegalStateException("El ticket ya está cerrado");
         }
         this.exitTime = exitTime;
         this.amountCharged = amountCharged;

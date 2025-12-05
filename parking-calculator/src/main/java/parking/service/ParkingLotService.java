@@ -26,7 +26,7 @@ public class ParkingLotService {
 
     public ParkingTicket registerEntry(String licensePlate, VehicleType type, LocalDateTime entryTime) {
         if (licensePlate == null || type == null || entryTime == null) {
-            throw new IllegalArgumentException("Arguments cannot be null");
+            throw new IllegalArgumentException("Los argumentos no pueden ser nulos");
         }
 
         long id = nextId++;
@@ -43,11 +43,11 @@ public class ParkingLotService {
         ParkingTicket ticket = tickets.get(ticketId);
 
         if (ticket == null) {
-            throw new IllegalArgumentException("Ticket does not exist");
+            throw new IllegalArgumentException("El ticket no existe");
         }
 
         if (ticket.getStatus() == TicketStatus.CLOSED) {
-            throw new IllegalStateException("Ticket is already closed");
+            throw new IllegalStateException("El ticket ya está cerrado");
         }
 
         long amount = rateCalculator.calculateAmount(ticket.getEntryTime(), exitTime, ticket.getVehicleType());
@@ -72,7 +72,7 @@ public class ParkingLotService {
     public ParkingTicket getTicket(long id) {
         ParkingTicket t = tickets.get(id);
         if (t == null) {
-            throw new IllegalArgumentException("Ticket does not exist");
+            throw new IllegalArgumentException("El ticket no existe");
         }
         return t;
     }

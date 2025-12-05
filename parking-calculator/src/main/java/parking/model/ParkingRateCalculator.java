@@ -12,7 +12,7 @@ public class ParkingRateCalculator {
     public long calculateAmount(LocalDateTime entryTime, LocalDateTime exitTime, VehicleType type) {
 
         if (entryTime == null || exitTime == null || type == null) {
-            throw new IllegalArgumentException("Arguments cannot be null");
+            throw new IllegalArgumentException("Los argumentos no pueden ser nulos");
         }
 
         long minutes = Duration.between(entryTime, exitTime).toMinutes();
